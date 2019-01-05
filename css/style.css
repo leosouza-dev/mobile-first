@@ -8,6 +8,8 @@ body{
 
 .cabecalho{
     background: #FFF;
+
+    padding: 15px;
 }
 
 /* logotipo - componentizado*/
@@ -41,4 +43,28 @@ body{
 
 .menu-principal__btn--fechar{
     background-position: -48px 7px; 
+}
+
+/* lista do menu principal - como modificador (atual)*/
+
+.menu-principal__lista{
+    list-style: none;
+    padding: 0;
+}
+
+.menu-principal__item{
+    text-decoration: none;
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 10px;
+    display: block; /* necessário colcar pois o link e displey inline - não aceita valores de margim, etc*/
+    font-size: 18px;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.menu-principal__item--atual{
+    color: #F44242;
 }
