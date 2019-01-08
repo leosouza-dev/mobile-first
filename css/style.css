@@ -2,14 +2,25 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 body{
     font-family: "Source Sans Pro";
 }
 
 .cabecalho{
     background: #FFF;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2914d578c6b8f845063d9bc0a883e3822081182d
     padding: 15px;
 }
+
+/* logotipo - componentizado*/
 
 .logo{
     background-image: url(../img/logotipo-preto.png);
@@ -25,7 +36,11 @@ body{
     background-image: url(../img/logotipo-branco.png);
 }
 
+<<<<<<< HEAD
 /*Botão abrir fechar do menu principal*/
+=======
+/* botão do menu principal - BEM */
+>>>>>>> 2914d578c6b8f845063d9bc0a883e3822081182d
 
 .menu-principal__btn{
     display: block;
@@ -50,11 +65,19 @@ body{
     background-position: -48px 7px; 
 }
 
+<<<<<<< HEAD
 /*lista de navegação do menu principal*/
 
 .menu-principal__lista{
     padding: 0;
     list-style: none
+=======
+/* lista do menu principal - como modificador (atual)*/
+
+.menu-principal__lista{
+    list-style: none;
+    padding: 0;
+>>>>>>> 2914d578c6b8f845063d9bc0a883e3822081182d
 }
 
 .menu-principal__item{
@@ -62,6 +85,7 @@ body{
     font-weight: bold;
     color: #343434;
     margin-bottom: 10px;
+<<<<<<< HEAD
     display: block;
     font-size: 18px;
 }
@@ -76,6 +100,23 @@ body{
     color: #FFF;
 }
 
+=======
+    display: block; /* necessário colcar pois o link e displey inline - não aceita valores de margim, etc*/
+    font-size: 18px;
+
+
+}
+
+.menu-principal__item--atual{
+    color: #F44242;
+}
+
+/* rodape */
+
+.rodape{
+    color: #fff;
+}
+>>>>>>> 2914d578c6b8f845063d9bc0a883e3822081182d
 .rodape .logo{
     margin-bottom: 20px;
 }
@@ -84,12 +125,21 @@ body{
     background-color: #272525;
     background-image: url(../img/rodape-bg.jpg);
     background-size: cover;
+<<<<<<< HEAD
     padding: 15px;
 
 }
 
 .rodape__linha-2{
     background-color: #000000;
+=======
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+.rodape__linha-2{
+    background-color: #000;
+>>>>>>> 2914d578c6b8f845063d9bc0a883e3822081182d
     text-align: center;
     padding: 15px;
 }
@@ -100,7 +150,11 @@ body{
 }
 
 .rodape__titulo{
+<<<<<<< HEAD
     border-bottom: 1px solid #FFF;
+=======
+    border-bottom: 1px solid #fff;
+>>>>>>> 2914d578c6b8f845063d9bc0a883e3822081182d
     padding: 0 10px 10px 10px;
     font-size: 18px;
 }
@@ -120,5 +174,9 @@ body{
 .rodape__lista-links__item::before{
     content: ">";
     margin-right: 8px;
+<<<<<<< HEAD
     color: #f44242;
+=======
+    color: #F44242;
+>>>>>>> 2914d578c6b8f845063d9bc0a883e3822081182d
 }
