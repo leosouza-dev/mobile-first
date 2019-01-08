@@ -1,0 +1,31 @@
+// abstract
+@import 'abstract/cores';
+
+//base
+@import 'base/normalize';
+@import 'base/meu-reset';
+
+//layout
+@import 'layout/cabecalho';
+@import 'layout/rodape';
+
+//components
+@import 'components/alinhamento-texto';
+@import 'components/depoimentos';
+@import 'components/formulario';
+@import 'components/logo';
+@import 'components/mapa';
+@import 'components/menu-principal';
+@import 'components/pagina-cabecalho';
+@import 'components/pagina-conteudo';
+@import 'components/servicos';
+
+//pages
+@import 'pages/contato';
+@import 'pages/pagina-inicial';
+@import 'pages/portifolio';
+@import 'pages/sobre-nos';
+
+
+
+
