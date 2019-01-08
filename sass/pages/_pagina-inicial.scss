@@ -1,0 +1,39 @@
+.cabecalho-home{
+    background: url(../img/cabecalho-home-bg.jpg) #000 no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cabecalho-home__titulo{
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.cabecalho-home__role{
+    display: none;
+}
+
+/* lista de serviços */
+
+.home__titulo{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.home__titulo::after{ /*pseudo elemento*/
+    content: '';
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 50px;
+    height: 3px;
+    background-color: #F00;
+}
+
+.home__titulo--branco::after{
+    background-color: #FFF;
+}
