@@ -1,0 +1,19 @@
+.container{
+    // max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media(min-width: $breackpoint-sm){
+        width: 540px;
+    }
+    @media(min-width: $breackpoint-md){
+        width: 720px;
+    }
+    @media(min-width: $breackpoint-lg){
+        width: 960px;
+    }
+    @media(min-width: $breackpoint-xl){
+        width: 1140px;
+    }
+}

@@ -4,6 +4,10 @@
     color: white;
     text-align: center;
     padding: 50px 0;
+
+    @media(min-width: $breackpoint-lg){
+        height: 100vh;
+    }
 }
 
 .cabecalho-home__titulo{

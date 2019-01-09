@@ -1,4 +1,5 @@
 // abstract
+@import 'abstract/breackpoints';
 @import 'abstract/cores';
 
 //base
@@ -6,6 +7,7 @@
 @import 'base/meu-reset';
 
 //layout
+@import 'layout/container';
 @import 'layout/cabecalho';
 @import 'layout/rodape';
 
