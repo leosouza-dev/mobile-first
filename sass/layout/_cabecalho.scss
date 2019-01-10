@@ -3,4 +3,24 @@
     padding: 15px;
     position: fixed;
     width: 100%;
+
+    @media(min-width: $breackpoint-md){
+        min-height: 100px;
+    
+        .logo{
+                float: left;
+                margin-top: 10px;
+            }
+
+        .menu-principal{
+                float: right;
+                margin-top: 12px;
+
+                &__lista{
+                    margin-bottom: 0;
+                }
+            }
+    }
+
+
 }
