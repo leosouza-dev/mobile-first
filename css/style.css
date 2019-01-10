@@ -504,7 +504,8 @@ body {
         display: none; } }
   .menu-principal__lista {
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    transition: all 200ms ease-out; }
     @media (min-width: 768px) {
       .menu-principal__lista li {
         display: inline-block;
@@ -515,7 +516,9 @@ body {
     color: #343434;
     margin-bottom: 10px;
     display: block;
-    font-size: 18px; }
+    font-size: 18px;
+    height: 20px;
+    transition: all 200ms ease-out; }
   .menu-principal__item--atual {
     color: #f44242; }
   @media (max-width: 767px) {
@@ -584,17 +587,40 @@ body {
   text-align: center;
   padding: 50px 0;
   padding-top: 150px; }
+  .cabecalho-home__titulo {
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: bold; }
+  .cabecalho-home__role {
+    display: none; }
+  @media (min-width: 768px) {
+    .cabecalho-home {
+      background-image: url(../img/cabecalho-home-bg-md.jpg); } }
   @media (min-width: 992px) {
     .cabecalho-home {
-      height: 100vh; } }
-
-.cabecalho-home__titulo {
-  font-size: 40px;
-  margin-bottom: 0;
-  font-weight: bold; }
-
-.cabecalho-home__role {
-  display: none; }
+      height: 100vh; }
+      .cabecalho-home__titulo {
+        font-size: 60px;
+        margin-top: 300px; }
+      .cabecalho-home__subtitulo {
+        font-size: 22px; }
+      .cabecalho-home__role {
+        position: absolute;
+        background: url(../img/icone-mouse.png) no-repeat center right;
+        display: block;
+        color: #FFF;
+        left: 50%;
+        bottom: 10px;
+        height: 50px;
+        width: 200px;
+        text-align: left;
+        font-size: 20px;
+        text-decoration: none;
+        line-height: 42px;
+        margin-left: -100px; } }
+  @media (min-width: 1200px) {
+    .cabecalho-home {
+      background-image: url(../img/cabecalho-home-bg-xl.jpg); } }
 
 /* lista de serviços */
 .home__titulo {

@@ -6,20 +6,53 @@
     padding: 50px 0;
     padding-top: 150px;
 
+    &__titulo{
+        font-size: 40px;
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    
+    &__role{
+        display: none;
+    }
+
+
+    @media(min-width: $breackpoint-md){
+        background-image: url(../img/cabecalho-home-bg-md.jpg);
+    }
+
     @media(min-width: $breackpoint-lg){
         height: 100vh;
+        &__titulo{
+            font-size: 60px;
+            margin-top: 300px;
+        }
+        &__subtitulo{
+            font-size: 22px;
+        }
+        &__role{
+            position: absolute;
+            background: url(../img/icone-mouse.png) no-repeat center right;
+            display: block;
+            color: #FFF;
+            left: 50%;
+            bottom: 10px;
+            height: 50px;
+            width: 200px;
+            text-align: left;
+            font-size: 20px;
+            text-decoration: none;
+            line-height: 42px;
+            margin-left: -100px;
+        }
+    }
+
+    @media(min-width: $breackpoint-xl){
+        background-image: url(../img/cabecalho-home-bg-xl.jpg);
     }
 }
 
-.cabecalho-home__titulo{
-    font-size: 40px;
-    margin-bottom: 0;
-    font-weight: bold;
-}
 
-.cabecalho-home__role{
-    display: none;
-}
 
 /* lista de serviços */
 
