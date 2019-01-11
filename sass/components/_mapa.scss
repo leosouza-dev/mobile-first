@@ -4,6 +4,16 @@
     position: relative; /*para o mapa*/
     overflow: hidden;
     margin: 0 -15px -25px -15px;
+
+    @media(min-width: 450px){
+        padding-bottom: 40%;
+    }
+    @media($breackpoint-md){
+        padding-bottom: 30%;
+    }
+    @media($breackpoint-lg){
+        padding-bottom: 10%;
+    }
 }
 
 .mapa iframe{

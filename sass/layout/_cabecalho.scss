@@ -3,6 +3,7 @@
     padding: 15px;
     position: fixed;
     width: 100%;
+    z-index: 9999;
 
     @media(min-width: $breackpoint-md){
         min-height: 100px;
