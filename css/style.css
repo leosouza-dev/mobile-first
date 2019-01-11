@@ -395,6 +395,15 @@ body {
 .text-center {
   text-align: center; }
 
+.img-left {
+  float: left; }
+
+@media (min-width: 768px) {
+  .img-left-md {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px; } }
+
 .depoimentos {
   background-color: #dd3f3f;
   background-image: url(../img/cabecalho-pagina-bg.jpg);
@@ -565,7 +574,12 @@ body {
 .pagina-conteudo {
   padding: 15px;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  overflow: auto; }
+  @media (min-width: 768px) {
+    .pagina-conteudo {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
 
 .pagina-conteudo > p {
   color: #3a3a3a;
@@ -669,3 +683,8 @@ body {
   margin-left: 15px;
   border-left: 1px solid #000;
   padding-left: 10px; }
+
+@media (min-width: 768px) {
+  .pagina-sobre .pagina-conteudo {
+    padding-right: 150px;
+    padding-left: 150px; } }

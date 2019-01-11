@@ -2,6 +2,13 @@
     padding: 15px;
     padding-top: 25px;
     padding-bottom: 25px;
+
+    overflow: auto;
+
+    @media(min-width: $breackpoint-md){
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 .pagina-conteudo > p{
