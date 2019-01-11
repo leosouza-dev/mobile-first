@@ -336,7 +336,8 @@ body {
   padding: 15px;
   position: fixed;
   width: 100%;
-  z-index: 9999; }
+  z-index: 99;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2); }
   @media (min-width: 768px) {
     .cabecalho {
       min-height: 100px; }
@@ -695,22 +696,58 @@ body {
 
 .lista-trabalhos {
   list-style: none;
-  padding: 0; }
-
-.lista-trabalhos__item {
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-bottom: 50px; }
-
-.lista-trabalhos__item a {
-  text-decoration: none;
-  color: #000; }
-
-.lista_trabalhos__titulo {
-  font-size: 18px;
-  margin-left: 15px;
-  border-left: 1px solid #000;
-  padding-left: 10px; }
+  padding: 0;
+  margin-top: 100px; }
+  .lista-trabalhos__item {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 50px; }
+  .lista-trabalhos__item a {
+    text-decoration: none;
+    color: #000; }
+  .lista-trabalhos__img {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .lista-trabalhos__titulo {
+    font-size: 18px;
+    margin-left: 15px;
+    border-left: 1px solid #000;
+    padding-left: 10px; }
+  @media (min-width: 768px) {
+    .lista-trabalhos__item {
+      margin: 0;
+      float: left;
+      width: 50%;
+      background-color: #f44242;
+      position: relative;
+      overflow: hidden; }
+      .lista-trabalhos__item:hover .lista-trabalhos__img {
+        opacity: 0.1;
+        transform: scale(1.4); }
+      .lista-trabalhos__item:hover .lista-trabalhos__titulo {
+        opacity: 1; }
+    .lista-trabalhos__img {
+      opacity: 1;
+      transition: all 300ms ease-in-out; }
+    .lista-trabalhos__titulo {
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-align: center;
+      position: absolute;
+      top: 40%;
+      left: 0px;
+      width: 100%;
+      background: url(../img/icone-olho.png) no-repeat bottom center;
+      padding-bottom: 35px;
+      font-size: 22px;
+      opacity: 0;
+      transition: all 300ms ease-in-out; } }
+  @media (min-width: 992px) {
+    .lista-trabalhos__item {
+      width: 33.333%; } }
 
 @media (min-width: 768px) {
   .pagina-sobre .pagina-conteudo {
