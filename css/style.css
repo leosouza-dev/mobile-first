@@ -473,6 +473,12 @@ body {
     display: block;
     margin: 0 auto;
     font-weight: bold; }
+  .formulario label.error {
+    border-left: 3px solid #f44242;
+    padding-left: 3px;
+    margin-top: 5px;
+    margin-left: 3px;
+    color: #f44242; }
   @media (min-width: 768px) {
     .formulario {
       padding-bottom: 0px; }

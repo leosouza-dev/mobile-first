@@ -21,5 +21,26 @@ $(document).ready(function(){
         arrows: false,
         dots: true
     });
+
+    //plugin validate - validação do formulario
+    $(".formulario").validate({
+        rules: {
+            nome: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            mensagem: "required"
+        },
+
+        messages: {
+            nome: "Campo obrigatório",
+            email: {
+                required: "Campo obrigatório",
+                email: "Email invalido"
+            },
+            mensagem: "Campo obrigatório"
+        }
+    });
 });
 

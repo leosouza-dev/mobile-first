@@ -34,6 +34,14 @@
         margin: 0 auto;
         font-weight: bold;
     }
+
+    label.error{
+        border-left: 3px solid $cor-principal;
+        padding-left: 3px;
+        margin-top: 5px;
+        margin-left: 3px;
+        color: $cor-principal;
+    }
     
     @media (min-width: $breackpoint-md){
         padding-bottom: 0px;
