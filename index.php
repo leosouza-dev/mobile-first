@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Design Responsivo</title>
-</head>
-<body>
-    <header class="cabecalho">
-        <div class="container">
-            <h1 class="logo">Design Responsivo</h1>
-            <nav class="menu-principal menu-principal--fechado">
-                <button class="menu-principal__btn menu-principal__btn--fechar">Abrir/fechar menu</button>
-                <ul class="menu-principal__lista">
-                    <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
-                    <li><a class="menu-principal__item" href="sobre.html">Sobe nós</a></li>
-                    <li><a class="menu-principal__item" href="portifolio.html">Portifólio</a></li>
-                    <li><a class="menu-principal__item" href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <?php 
+    include('parts/cabecalho.php')
+    ?>
 
     <main>
 
@@ -86,41 +64,8 @@
 
     </main>
 
-    <footer class="rodape">
-        <div class="rodape__linha-1">
-            <div class="container">
-                <div class="rodape__coluna">
-                    <a class="logo logo--branco" href="index.html">Design Responsivo</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Quisquam corrupti vel omnis hic reprehenderit veritatis voluptates. Cum at delectus, dolore totam commodi ad quae doloremque soluta eum ut officiis ex.</p>
-                </div>
-                <div class="rodape__coluna">
-                    <h2 class="rodape__titulo" >Social</h2>
-                    <ul class="rodape__lista-links">
-                        <li><a class="rodape__lista-links__item" target="_blank" href="https://twitter.com">Twitter</a></li>
-                        <li><a class="rodape__lista-links__item" target="_blank" href="https://facebook.com">Facebook</a></li>
-                        <li><a class="rodape__lista-links__item" target="_blank" href="https://intagram.com">Intagram</a></li>
-                        <li><a class="rodape__lista-links__item" target="_blank" href="https://youtube.com">Youtube</a></li>
-                    </ul>
-                </div>
-                <div class="rodape__coluna">
-                    <h2 class="rodape__titulo" >Links</h2>
-                    <ul class="rodape__lista-links">
-                        <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
-                        <li><a class="rodape__lista-links__item" href="sobre.html">Sobe nós</a></li>
-                        <li><a class="rodape__lista-links__item" href="portifolio.html">Portifólio</a></li>
-                        <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <?php 
+    include('parts/rodape.php')
+    ?>
 
-        <div class="rodape__linha-2">
-            &copy 2018 - Todos os direitos reservados - Leonardo Souza
-        </div>
-    </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <!-- <script src="js/jquery.fancybox.min.js"></script> -->
-    <script src="js/main.js"></script>
-</body>
-</html>
+    
