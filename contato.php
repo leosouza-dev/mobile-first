@@ -16,8 +16,8 @@
             if($nome != '' && $email != '' && $mensagem != ''){
                 // mensagem ok
                 $mensagemEmail = 'Nome: ' . $nome . ' - ';
-                $mensagemEmail = 'Email: ' . $email . ' - ';
-                $mensagemEmail = 'Mensagem: ' . $mensagem;
+                $mensagemEmail .= 'Email: ' . $email . ' - ';
+                $mensagemEmail .= 'Mensagem: ' . $mensagem;
                 if(mail('sarival@sarival.com.br', 'Mensagem de Contato', $mensagemEmail)){
                     //email enviado
                     $sucessoFormulario = "Mensagem enviada com sucesso";
