@@ -8,10 +8,26 @@
     padding-top: 40px;
     padding-bottom: 40px;
     box-shadow: 0 3px 5px #989898;
+    &__erro{
+        background-color: $cor-principal;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    &__sucesso{
+        background-color: rgba(9, 154, 36, 1);
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
     &__grupo{
         margin-bottom: 15px;
     }
-    
+
     &__campo{
         width: 100%;
         border: 1px solid #c4c4c4;

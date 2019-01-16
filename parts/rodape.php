@@ -27,12 +27,14 @@
         </div>
 
         <div class="rodape__linha-2">
-            &copy 2018 - Todos os direitos reservados - Leonardo Souza
+            <?php echo date('Y') ?> - Todos os direitos reservados - Leonardo Souza
         </div>
     </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <!-- <script src="js/jquery.fancybox.min.js"></script> -->
-    <script src="js/main.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script> -->
+    <script src="js/app.min.js"></script>
 </body>
 </html>

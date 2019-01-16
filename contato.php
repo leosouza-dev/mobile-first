@@ -2,6 +2,36 @@
         global $tituloPagina;
         $tituloPagina = "Contato";
         include('parts/cabecalho.php');
+
+        $nome = '';
+        $email = '';
+        $mensagem = ''; 
+        $erroFormulario = '';
+        $sucessoFormulario = '';
+        if( isset($_POST['submit'])){
+            $nome = $_POST['nome'];
+            $email = $_POST['email'];
+            $mensagem = $_POST['mensagem'];
+
+            if($nome != '' && $email != '' && $mensagem != ''){
+                // mensagem ok
+                $mensagemEmail = 'Nome: ' . $nome . ' - ';
+                $mensagemEmail = 'Email: ' . $email . ' - ';
+                $mensagemEmail = 'Mensagem: ' . $mensagem;
+                if(mail('sarival@sarival.com.br', 'Mensagem de Contato', $mensagemEmail)){
+                    //email enviado
+                    $sucessoFormulario = "Mensagem enviada com sucesso";
+                }
+                else{
+                    //email não enviado
+                    $erroFormulario = "Mensagem não enviada. Tente novamente mais tarde ou diretamente no email sarival@sarival.com.br";
+                }
+            }
+            else{
+                //mensagem de erro
+                $erroFormulario = "Preencha todos os campos";
+            }
+        }
     ?>
 
     <main>
@@ -10,7 +40,20 @@
         </header>
         <section class="pagina-conteudo container">
             <p class="text-center">Suspendisse convallis, turpis vitae placerat luctus, est felis dictum augue.</p>
-            <form action="#" class="formulario">
+            <form action="contato.php" class="formulario" method="post">
+
+                <?php if($erroFormulario != ''): ?>
+                    <div class="formulario__erro">
+                        <?php echo $erroFormulario ?>
+                    </div>
+                <?php endif; ?>
+
+                <?php if($sucessoFormulario != ''): ?>
+                    <div class="formulario__sucesso">
+                        <?php echo $sucessoFormulario ?>
+                    </div>
+                <?php endif; ?>
+
                 <div class="formulario__grupo formulario__grupo--coluna-esq">
                     <label class="formulario__label" for="nome">Nome</label> <br>
                     <input class="formulario__campo" name="nome" id="nome" type="text">
@@ -26,7 +69,7 @@
                     <textarea class="formulario__campo" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
                 </div>
 
-                <input class="formulario__botao" type="submit" value="Enviar">
+                <input class="formulario__botao" type="submit" value="Enviar" name="submit">
             </form>
 
             <p class="text-center">
